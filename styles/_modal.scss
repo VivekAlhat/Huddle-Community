@@ -1,0 +1,36 @@
+@import "./variables";
+
+.modal {
+  position: absolute;
+  left: 25%;
+  width: fit-content;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5rem;
+  gap: 2rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
+
+  &__header {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $darkCyan;
+  }
+
+  &__btn {
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #fff;
+    background: $pink;
+    padding: 1.5rem 5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
+  }
+}

@@ -1,0 +1,66 @@
+@import "./variables";
+
+.footer {
+  padding: 10rem 5rem 5rem;
+  background: $darkCyan;
+  color: #f8f8ff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 1rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    &-logo {
+      width: 12rem;
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    li {
+      list-style: none;
+      margin: 1rem 0;
+    }
+  }
+
+  &__copyright {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-icons {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        cursor: pointer;
+        border: 1px solid #f8f8ff;
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 12px;
+        margin: 0 1rem;
+
+        &:hover {
+          color: $grayishBlue;
+        }
+      }
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+}

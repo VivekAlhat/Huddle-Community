@@ -1,0 +1,85 @@
+@import "./variables";
+
+.header {
+  height: 100vh;
+  padding: 3rem;
+  background: url("/images/bg-hero-desktop.svg") no-repeat;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-logo {
+      width: 12rem;
+    }
+
+    &-btn {
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: #fff;
+      color: #000;
+      text-align: center;
+      padding: 1rem 3rem;
+      border-radius: 50px;
+      box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
+      transition: all 200ms linear;
+
+      &:hover {
+        background: $pink;
+        color: #fff;
+      }
+    }
+  }
+
+  &__container {
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__data {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-right: 5rem;
+      gap: 1.2rem;
+
+      h1 {
+        color: $darkCyan;
+        font-family: "Poppins", sans-serif;
+        font-size: 2.5rem;
+      }
+
+      p {
+        line-height: 1.5rem;
+        color: $darkCyan;
+      }
+
+      &-btn {
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: $pink;
+        color: #fff;
+        text-align: center;
+        padding: 1.2rem 4rem;
+        border-radius: 50px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
+        transition: all 200ms linear;
+      }
+    }
+
+    &__img {
+      padding: 1rem;
+    }
+
+    &__mockup {
+      width: 40rem;
+    }
+  }
+}
