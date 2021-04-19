@@ -40,3 +40,32 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .main {
+    padding: 5rem 0rem;
+
+    &__container {
+      margin: 2rem 1rem;
+      padding: 2rem 1.5rem;
+      border-radius: 0;
+      flex-direction: column;
+      gap: 3rem;
+
+      &-content {
+        align-items: center;
+        text-align: center;
+
+        h3 {
+          font-size: 1.7rem;
+          margin-bottom: 1rem;
+        }
+      }
+
+      &-logo {
+        width: 20rem;
+        margin: 1rem 0;
+      }
+    }
+  }
+}
